@@ -1,0 +1,189 @@
+header {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 65px;
+    padding: 1.4rem 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.logo,
+.logo-inicio,
+.buscar {
+    font-size: 3.5rem;
+    display: flex;
+
+}
+
+
+.logo-inicio {
+    background-color: #2A2A2A;
+    padding: 0.5rem 1rem;
+    border-radius: 20rem;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo-inicio :hover {
+    color: white;
+}
+
+.logo-inicio,
+.buscar {
+    color: #B3B3B3;
+    cursor: pointer;
+}
+
+
+.buscar-inicio {
+    display: flex;
+    gap: 10px;
+}
+
+.buscar :hover {
+    color: white;
+}
+
+.buscar {
+    display: flex;
+    align-items: center;
+    background-color: #2A2A2A;
+    border-radius: 10rem;
+    padding: 0.6rem;
+}
+
+
+
+.login-painel{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.login {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.inscreva {
+    color: #B3B3B3;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.inscreva :hover {
+    color: white;
+}
+
+.entrar {
+    padding: 1.5rem 2.5rem;
+    font-weight: 700;
+    background-color: white;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+
+.buscar input {
+    width: 40rem;
+    height: 0.4rem;
+    border: none;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    padding: 1rem;
+    color: white;
+    background-color: #2A2A2A;
+    font-size: 1.7rem;
+}
+
+
+.hamburguer {
+    border: none;
+    background: none;
+    border-bottom: 3px solid white;
+    cursor: pointer;
+    display: none;
+    margin: 2rem;
+}
+
+.hamburguer::after,
+.hamburguer::before {
+    content: '';
+    display: block;
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 5px;
+    position: relative;
+    transition: 0.2s;
+}
+
+.active .hamburguer {
+    border: none;
+    margin-top: 30px;
+}
+
+.active .hamburguer::before {
+    transform: rotate(135deg);
+}
+
+.active .hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+}
+
+
+
+@media(max-width:852px) {
+
+    .hamburguer {
+        display: block;
+    }
+
+    .buscar-inicio {
+        display: none;
+    }
+
+    .logo {
+        width: 70rem;
+    }
+
+    .login {
+        display: none;
+    }
+
+    
+    .menu-active .login{
+        position: absolute;
+        width: 100%;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.945);
+        margin-top: 30px;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: start;
+        gap: 40px;
+        display: flex;
+    }
+    
+    .login-painel{
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+        gap: 30px;
+    }
+    .inscreva, .entrar{
+        font-size: 1.5rem;
+    }
+
+}
+

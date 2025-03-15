@@ -1,0 +1,255 @@
+.container {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: auto;
+    padding: 0.1rem 10px;
+    display: flex;
+}
+
+.home {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.left {
+    background-color: #121212;
+    width: 300px;
+    height: 88%;
+    border-radius: 10px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.library-mais {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    padding: 2rem;
+}
+
+
+
+.library {
+    display: flex;
+    font-size: 2.7rem;
+    text-align: center;
+    gap: 10px;
+    color: #ADADAD;
+    cursor: pointer;
+    align-items: center;
+}
+
+.library h6 {
+    font-size: 1.5rem;
+}
+
+.library-mais :hover {
+    color: white;
+}
+
+.mais {
+    font-size: 2.6rem;
+    display: flex;
+    color: #ADADAD;
+    cursor: pointer;
+}
+
+.mais :hover {
+    background-color: #1F1F1F;
+    border-radius: 2rem;
+}
+
+
+.caixa-fundo {
+    width: 100%;
+    height: 130px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.grid-caixa {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.caixa-1,
+.caixa-2 {
+    background-color: #1F1F1F;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+
+.grid-caixa h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.grid-caixa p {
+    font-size: 1.3rem;
+}
+
+.criar,
+.explore {
+    padding: 0.6rem 10px;
+    border-radius: 20px;
+    border: none;
+    color: black;
+    font-weight: 550;
+}
+
+
+.caixa-paginas {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 20px;
+    padding: 1.4rem 20px;
+}
+
+.paginas {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.nav {
+    color: #AEAEAE;
+}
+
+
+
+.right {
+    background-color: #121212;
+    width: 1040px;
+    height: 88%;
+    border-radius: 10px;
+    display: flex;
+    padding: 2rem 35px;
+    overflow-y: auto;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.right h1 {
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+
+.grid-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 180px);
+    grid-template-rows: 240px;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    justify-content: start;
+
+}
+
+.scrool {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card {
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+    text-align: center;
+    padding: 1rem;
+    gap: 5px;
+}
+
+.grid-list :hover,
+.grid-list2 :hover {
+    background-color: #1F1F1F;
+}
+
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5 {
+    border-radius: 100%;
+    padding: 0rem 0.2rem;
+}
+
+.card h2 {
+    font-weight: 450;
+}
+
+.card p {
+    font-size: 1.3rem;
+    color: #B3B3B3;
+}
+
+
+.singles h1 {
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+
+.grid-list2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 180px);
+    grid-template-rows: 240px;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    justify-content: start;
+}
+
+@media(max-width:1104px) {
+    .left {
+        display: none;
+    }
+
+
+    .home {
+        height: 100vh;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .right {
+        height: 100vh;
+    }
+
+    .grid-list,
+    .grid-list2 {
+        justify-content: center;
+    }
+
+    body {
+        overflow: auto;
+    }
+
+
+}

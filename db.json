@@ -1,0 +1,34 @@
+{
+    "Artists": [
+        {
+            "id": "1",
+            "title": "Jorge & Matheus",
+            "views": 100
+        },
+        {
+            "id": "2",
+            "title": "Matheus & Kauan",
+            "views": 200
+        },
+        {
+            "id": "3",
+            "title": "MC Tuto",
+            "views": 200
+        },
+        {
+            "id": "4",
+            "title": "Henrrique & Juliano",
+            "views": 200
+        },
+        {
+            "id": "5",
+            "title": "Grupo Menos é Mais",
+            "views": 200
+        },
+        {
+            "id": "6",
+            "title": "Zé Neto & Cristiano",
+            "views": 200
+        }
+    ]
+}
